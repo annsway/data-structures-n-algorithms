@@ -3,7 +3,7 @@
  * Definition for singly-linked list.
  * public class ListNode {
  *     int val;
- *     ListNode next;
+ *     ListNode next; // next is a member of class ListNode
  *     ListNode(int x) { val = x; }
  * }
  */
