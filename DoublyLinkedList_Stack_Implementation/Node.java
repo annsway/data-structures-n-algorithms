@@ -20,24 +20,34 @@ public class Node<T>
         this.previous = previous;
         this.next  = next;
     }
+
     // Accessor methods:
     public T getElement() {
         return  element;
     }
+
     public Node getPrevious() {
         return previous;
     }
+
     public Node getNext() {
         return  next;
     }
+
     // Modifier methods:
     public void  setElement(T newElem)  {
         element  =  newElem;
     }
+
     public void setPrevious(Node newPreivous){
         previous = newPreivous;
     }
+
     public void  setNext(Node newNext)  {
         next  =  newNext;
+    }
+
+    public String toString(){//overriding the toString() method
+        return ""+element;
     }
 }

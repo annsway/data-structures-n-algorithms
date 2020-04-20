@@ -23,4 +23,21 @@ public class Stack<T> implements IStack<T>{
         return stack.size();
     }; //This method return the number of elements in the stack.
 
+
+    public void printStack(Stack<T> s){
+        // Recursion
+        if(s.isEmpty()){
+            return;
+        }
+        T x = s.peek();
+        s.pop();
+        printStack(s);
+        System.out.println(x.toString()+" ");
+        s.push(x);
+
+    }
+
+    private boolean isEmpty() {
+        return stack.isEmpty();
+    }
 }

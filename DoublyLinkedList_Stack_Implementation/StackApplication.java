@@ -2,49 +2,52 @@ public class StackApplication {
 
     public static void main(String[] args) {
 
-        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> stackInteger = new Stack<>();
 
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        stack.push(4);
-        stack.push(5);
-        stack.push(6);
-        stack.push(7);
-        stack.push(8);
-        stack.push(9);
-        stack.push(10);
-        stack.push(11);
-        stack.push(12);
-        stack.push(13);
-        stack.push(14);
-        stack.push(15);
-        stack.push(16);
-        stack.push(17);
-        stack.push(18);
-        stack.push(19);
-        stack.push(20);
+        stackInteger.push(1);
+        stackInteger.push(2);
+        stackInteger.push(3);
+        stackInteger.push(4);
+        stackInteger.push(5);
+        stackInteger.push(6);
+        stackInteger.push(7);
+        stackInteger.push(8);
+        stackInteger.push(9);
+        stackInteger.push(10);
+        stackInteger.push(11);
+        stackInteger.push(12);
+        stackInteger.push(13);
+        stackInteger.push(14);
+        stackInteger.push(15);
+        stackInteger.push(16);
+        stackInteger.push(17);
+        stackInteger.push(18);
+        stackInteger.push(19);
+        stackInteger.push(20);
 
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
+        stackInteger.pop();
+        stackInteger.pop();
+        stackInteger.pop();
+        stackInteger.pop();
+        stackInteger.pop();
 
-        stack.peek();
+        stackInteger.peek();
 
-        stack.pop();
-        stack.pop();
+        stackInteger.pop();
+        stackInteger.pop();
 
-        stack.push(18);
-        stack.push(21);
-        stack.push(23);
+        stackInteger.push(18);
+        stackInteger.push(21);
+        stackInteger.push(23);
 
-        stack.pop();
-        stack.pop();
-        stack.peek();
+        stackInteger.pop();
+        stackInteger.pop();
+        stackInteger.peek();
 
-        System.out.println(stack.peek());
+        System.out.println("The top element of the integer stack is "+stackInteger.peek());
+
+        System.out.println("\nPrint the integer stack from bottom to top: ");
+        stackInteger.printStack(stackInteger);
 
         /////////////////////////////////
         Stack<Person> stackPerson = new Stack<>();
@@ -57,8 +60,12 @@ public class StackApplication {
         stackPerson.push(new Person("Jim", "Raff"));
         stackPerson.push(new Person("JoAnna", "Halls"));
 
-        System.out.println(stackPerson.peek().FirstName);
-        System.out.println(stackPerson.size());
+        System.out.println("\nThe top element of the Person stack is "+stackPerson.peek());
+
+        System.out.println("\nPrint the Person stack from bottom to top: ");
+        stackPerson.printStack(stackPerson);
+        
+        
     }
 
 }

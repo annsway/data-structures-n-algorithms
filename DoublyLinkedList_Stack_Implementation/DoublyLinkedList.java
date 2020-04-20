@@ -12,7 +12,7 @@ public class DoublyLinkedList<E> {
         return res;
     }
 
-    public boolean isEmpty(Node node){
+    public boolean isEmpty(){
         return head == null;
     }
 
@@ -43,10 +43,12 @@ public class DoublyLinkedList<E> {
 
     public void removeFirstNode(){
 
-        if (head != null){
+        if (head != null && head.getNext() != null){
             Node new_head = head.getNext();
             new_head.setPrevious(null);
             head = new_head;
+        } else {
+            head = null;
         }
 
     }
@@ -61,7 +63,6 @@ public class DoublyLinkedList<E> {
         prev_node = curr_node.getPrevious();
         prev_node.setNext(null);
         curr_node.setPrevious(null);
-
 
     }
 

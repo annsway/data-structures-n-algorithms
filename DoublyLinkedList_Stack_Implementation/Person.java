@@ -7,4 +7,16 @@ public class Person {
         this.LastName = ln;
     }
 
+    public String getFirstName(){
+        return FirstName;
+    }
+
+    public String getLastName(){
+        return LastName;
+    }
+
+    public String toString(){
+        return FirstName + " " + LastName;
+    }
+
 }
