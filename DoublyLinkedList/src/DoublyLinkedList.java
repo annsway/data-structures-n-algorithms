@@ -1,10 +1,10 @@
 public class DoublyLinkedList<E> {
 
-    Node head;
+    Node<E> head;
 
     public int size(){
         int res = 0;
-        Node curr_node = head;
+        Node<E>curr_node = head;
         while(curr_node != null){
                 res++;
                 curr_node = curr_node.getNext();
@@ -17,7 +17,7 @@ public class DoublyLinkedList<E> {
     }
 
     public void addFirstNode(E element){
-        Node new_node = new Node(element, null,null);
+        Node<E>new_node = new Node(element, null,null);
 
         if (head != null) {
             new_node.setNext(head);
@@ -26,25 +26,25 @@ public class DoublyLinkedList<E> {
     }
 
     public void addLastNode(E element){
-        Node last_node = new Node(element, null, null);
-        Node curr_node = head;
+        Node<E>last_node = new Node(element, null, null);
+        Node<E>curr_node = head;
 
         if(head == null){
             addFirstNode((E) last_node);
+        } else {
+            while(curr_node.getNext() != null){
+                curr_node = curr_node.getNext();
+            }
+            last_node.setPrevious(curr_node);
+            curr_node.setNext(last_node);
         }
 
-        while(curr_node.getNext() != null){
-            curr_node = curr_node.getNext();
-        }
-
-        last_node.setPrevious(curr_node);
-        curr_node.setNext(last_node);
     }
 
     public void removeFirstNode(){
 
         if (head != null && head.getNext() != null){
-            Node new_head = head.getNext();
+            Node<E>new_head = head.getNext();
             new_head.setPrevious(null);
             head = new_head;
         } else {
@@ -54,8 +54,8 @@ public class DoublyLinkedList<E> {
     }
 
     public void removeLastNode(){
-        Node curr_node = head;
-        Node prev_node;
+        Node<E>curr_node = head;
+        Node<E>prev_node;
 
         while(curr_node.getNext()!=null){
             curr_node = head.getNext();
@@ -65,6 +65,16 @@ public class DoublyLinkedList<E> {
         curr_node.setPrevious(null);
 
     }
+
+    public void print(){
+        Node<E> curr_node = head;
+        while(curr_node!=null){
+            System.out.print(curr_node.toString()+" ");
+            curr_node = curr_node.getNext();
+        }
+    }
+
+
 
 }
 
