@@ -1,21 +1,24 @@
-public interface IQueue <T> {
+interface IQueue <T> {
 
     //Adds one element to the rear of this queue.
-    public void enqueue(T element);
+    void enqueue(T element);
 
     //Removes and returns the element at the front of this queue.
-    public T deque();
+    T deque();
 
     //Returns without removing the element at the front of this queue.
-    public T first();
+    T first();
 
     //Returns true if this queue contains no elements.
-    public boolean isEmpty();
+    boolean isEmpty();
 
     //Returns the number of elements in this queue.
-    public int size();
+    int size();
 
     // Returns a string representation of this queue.
-    public String toString();
+    String toString();
 
+    void traverseForward();
+
+    void traverseBackward();
 }

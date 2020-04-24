@@ -1,6 +1,8 @@
+import Exceptions.EmptyCollectionException;
+
 public class Stack<T> implements IStack<T>{
 
-    // Adapter Pattern
+    // Adapter class
     DoublyLinkedList<T> list;
 
     public Stack(DoublyLinkedList<T> list){
@@ -9,11 +11,17 @@ public class Stack<T> implements IStack<T>{
 
     @Override
     public T peek(){
+        if(list.isEmpty()){
+            return null;
+        }
         return (T) list.head;
     }; //This method is used to view the top item in the stack without removing it. It returns Null if the stack is empty.
 
     @Override
-    public void pop(){
+    public void pop() throws EmptyCollectionException {
+        if(list.isEmpty()){
+            throw new EmptyCollectionException("stack");
+        }
         list.removeFirstNode();
     }; //This method is similar to peek(). It should throw an exception when the stack is empty.
 
@@ -27,24 +35,19 @@ public class Stack<T> implements IStack<T>{
         return list.size();
     }; //This method return the number of elements in the stack.
 
-    private boolean isEmpty() {
+    @Override
+    public boolean isEmpty() {
         return list.isEmpty();
     }
 
-    public void printStack(){
-        list.print();
+    @Override
+    public void traverseForward(){
+        list.traverseForward();
     }
 
-    //    public void printStack(Stack<T> s){
-//        // Recursion
-//        if(s.isEmpty()){
-//            return;
-//        }
-//        T x = s.peek();
-//        s.pop();
-//        printStack(s);
-//        System.out.println(x.toString()+" ");
-//        s.push(x);
-//
-//    }
+    @Override
+    public void traverseBackward(){
+        list.traverseBackward();
+    }
+
 }

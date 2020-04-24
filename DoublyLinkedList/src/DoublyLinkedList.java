@@ -1,4 +1,6 @@
-public class DoublyLinkedList<E> {
+public class DoublyLinkedList<E> implements IDoublyLinkedList<E> {
+
+    // Adaptee class
 
     Node<E> head;
 
@@ -21,6 +23,7 @@ public class DoublyLinkedList<E> {
 
         if (head != null) {
             new_node.setNext(head);
+            head.setPrevious(new_node); // Must-have, otherwise stack element.getPrevious will always be null
         }
         head = new_node;
     }
@@ -54,11 +57,22 @@ public class DoublyLinkedList<E> {
     }
 
     public void removeLastNode(){
+
+        if(head==null){
+            return;
+        }
         Node<E>curr_node = head;
         Node<E>prev_node;
 
+        // only one element
+        if(head.getNext()==null){
+            head = null;
+            return;
+        }
+
+        // more than one element
         while(curr_node.getNext()!=null){
-            curr_node = head.getNext();
+            curr_node = head.getNext(); // find the last element
         }
         prev_node = curr_node.getPrevious();
         prev_node.setNext(null);
@@ -66,7 +80,7 @@ public class DoublyLinkedList<E> {
 
     }
 
-    public void print(){
+    public void traverseForward(){
         Node<E> curr_node = head;
         while(curr_node!=null){
             System.out.print(curr_node.toString()+" ");
@@ -74,7 +88,16 @@ public class DoublyLinkedList<E> {
         }
     }
 
-
+    public void traverseBackward(){
+        Node<E> curr_node = head;
+        while(curr_node.getNext()!=null){
+            curr_node = curr_node.getNext();
+        }
+        while(curr_node!=null){
+            System.out.print(curr_node.toString()+" ");
+            curr_node = curr_node.getPrevious();
+        }
+    }
 
 }
 

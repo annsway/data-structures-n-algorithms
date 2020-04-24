@@ -35,7 +35,7 @@ public class Node<T>
     }
 
     // Modifier methods:
-    public void  setElement(T newElem)  {
+    public void setElement(T newElem)  {
         element  =  newElem;
     }
 

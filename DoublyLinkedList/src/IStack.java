@@ -7,4 +7,7 @@ public interface IStack<T> {
     void pop(); //This method is similar to peek(). It should throw an exception when the stack is empty.
     void push(T value); //This method puts an item into the stack.
     int size(); //This method return the number of elements in the stack.
+    boolean isEmpty();
+    void traverseForward();
+    void traverseBackward();
 }
