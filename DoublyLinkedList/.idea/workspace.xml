@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0aa9170-5276-4ef2-8f36-7bbd8725e2d8" name="Default Changelist" comment="" />
+    <list default="true" id="c0aa9170-5276-4ef2-8f36-7bbd8725e2d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/DoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/DoublyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/DoublyLinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/DoublyLinkedListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/Exceptions/EmptyCollectionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/Exceptions/EmptyCollectionException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/IDoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/IDoublyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/IQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/IQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/IStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/IStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/META-INF/DoublyLinkedList.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/Queue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/Stack.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +32,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1aSQh3lt0LOm5SQG6nbN5KsEG6G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -28,12 +46,24 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
@@ -87,10 +117,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586726630884</updated>
+      <workItem from="1589602106257" duration="65000" />
+      <workItem from="1589602189038" duration="1480000" />
+      <workItem from="1589943292805" duration="607000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="208" y="43" key="#Project_Structure" timestamp="1589602153098">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="208" y="43" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1589602153098" />
     <state x="631" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1587693873148">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -104,25 +144,29 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="328" y="149" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.777@0.23.1280.777" timestamp="1587530280365" />
-    <state width="1238" height="184" key="GridCell.Tab.0.bottom" timestamp="1587693915443">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom" timestamp="1589852216327">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="184" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1587693915443" />
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1589852216327" />
     <state width="1238" height="184" key="GridCell.Tab.0.bottom/1280.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1587658321151" />
-    <state width="1238" height="184" key="GridCell.Tab.0.center" timestamp="1587693915442">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1398" height="231" key="GridCell.Tab.0.center" timestamp="1589852216326">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="184" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1587693915442" />
+    <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1589852216326" />
     <state width="1238" height="184" key="GridCell.Tab.0.center/1280.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1587658321149" />
-    <state width="1238" height="184" key="GridCell.Tab.0.left" timestamp="1587693915441">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1398" height="231" key="GridCell.Tab.0.left" timestamp="1589852216325">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="184" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1587693915441" />
+    <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1589852216325" />
     <state width="1238" height="184" key="GridCell.Tab.0.left/1280.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1587658321148" />
-    <state width="1238" height="184" key="GridCell.Tab.0.right" timestamp="1587693915442">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1398" height="231" key="GridCell.Tab.0.right" timestamp="1589852216326">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="184" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1587693915442" />
+    <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1589852216326" />
     <state width="1238" height="184" key="GridCell.Tab.0.right/1280.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1587658321150" />
     <state width="1238" height="231" key="GridCell.Tab.1.bottom" timestamp="1587691827437">
       <screen x="0" y="23" width="1280" height="777" />
