@@ -1,5 +1,10 @@
 // Ref: https://leetcode.com/problems/valid-anagram/
 
+/**
+Input: s = "anagram", t = "nagaram"
+Output: true
+**/
+
 class Solution {
     
     public boolean isAnagram(String s, String t) {        
