@@ -1,0 +1,10 @@
+﻿Region,Country,Item Type,Sales Channel,Order Priority,Order Date,Order ID,Ship Date,Units Sold,Unit Price,Unit Cost,Total Revenue,Total Cost,Total Profit,Tax Rate,Total Tax Paid
+nullnullnullnullnullSub-Saharan Africa,South Africa,Fruits,Offline,M,7/27/12,443368995,7/28/12,1593,9.33,6.92,14862.69,11023.56,3839.13,0.065,966.07
+nullnullnullnullnullMiddle East and North Africa,Morocco,Clothes,Online,M,9/14/13,667593514,10/19/13,4611,109.28,35.84,503890.08,165258.24,338631.84,0.065,32752.86
+nullnullnullnullnullAustralia and Oceania,Papua New Guinea,Meat,Offline,M,5/15/15,940995585,6/4/15,360,421.89,364.69,151880.4,131288.4,20592,0.065,9872.23
+nullnullnullnullnullSub-Saharan Africa,Djibouti,Clothes,Offline,H,5/17/17,880811536,7/2/17,562,109.28,35.84,61415.36,20142.08,41273.28,0.065,3992.0
+nullnullnullnullnullEurope,Slovakia,Beverages,Offline,L,10/26/16,174590194,12/4/16,3973,47.45,31.79,188518.85,126301.67,62217.18,0.065,12253.73
+nullnullnullnullnullAsia,Sri Lanka,Fruits,Online,L,11/7/11,830192887,12/18/11,1379,9.33,6.92,12866.07,9542.68,3323.39,0.065,836.29
+nullnullnullnullnullSub-Saharan Africa,Seychelles ,Beverages,Online,M,1/18/13,425793445,2/16/13,597,47.45,31.79,28327.65,18978.63,9349.02,0.065,1841.3
+nullnullnullnullnullSub-Saharan Africa,Tanzania,Beverages,Online,L,11/30/16,659878194,1/16/17,1476,47.45,31.79,70036.2,46922.04,23114.16,0.065,4552.35
+nullnullnullnullnullSub-Saharan Africa,Ghana,Office Supplies,Online,L,3/23/17,601245963,4/15/17,896,651.21,524.96,583484.16,470364.16,113120,0.065,37926.47
