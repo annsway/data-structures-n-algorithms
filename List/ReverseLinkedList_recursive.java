@@ -9,7 +9,7 @@ public class ReverseLinkedListRecursion {
         ListNode n2 = head.next; // 表示读head指向的node1中的黄色小纸条来找到node2
         n2.next = head; // ~ head.next.next = head 表示将node2中的黄色小纸条next写上head指向的node1的地址
         head.next = null;
-        return newHead;
+        return newHead; // 每层返回的都是newHead不变
     }
 
     public static void main(String[] args) {
