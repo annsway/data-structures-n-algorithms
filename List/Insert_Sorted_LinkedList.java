@@ -21,7 +21,7 @@ public ListNode insert(ListNode head, int value) {
     } 
 
     ListNode curr = head; 
-    
+
     while(curr.next != null){
       if(curr.next.value >= value){
         ListNode temp = curr.next;
@@ -34,4 +34,5 @@ public ListNode insert(ListNode head, int value) {
     curr.next = insert; 
     return head; 
   }
+  
 }
