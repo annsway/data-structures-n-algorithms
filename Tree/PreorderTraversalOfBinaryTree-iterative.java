@@ -32,12 +32,12 @@ public class Solution {
       // curr为下一个要print出来的元素
       TreeNode curr = stack.pollFirst();
       if(curr.right != null){
-        stack.offerFirst(curr.right); // 往stack上堆元素
+        stack.offerFirst(curr.right); // 往stack上堆元素 // preorder: 先把右边的压在stack底下，弹栈时后出
       } 
       if(curr.left != null){
         stack.offerFirst(curr.left); // 往stack上堆元素
       }
-      res.add(curr.key); 
+      res.add(curr.key); // 把value存到arraylist
     }
     return res; 
   }
