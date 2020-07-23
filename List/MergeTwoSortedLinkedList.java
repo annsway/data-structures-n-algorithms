@@ -19,14 +19,14 @@ public class Solution {
         // 谁小移谁
         while(one != null && two != null){
             if(one.value <= two.value){
-                curr.next = one;
-                curr = curr.next; // move forward 
+                curr.next = one; // 注意不是curr = one; 
                 one = one.next;
             } else {
                 curr.next = two;
-                curr = curr.next;
                 two = two.next;
             }
+            curr = curr.next; // move forward 
+
         }
         // Deal with the remaining elements in 'one' or 'two'
         // No need to use while loop since by pointing curr.next to one, 
