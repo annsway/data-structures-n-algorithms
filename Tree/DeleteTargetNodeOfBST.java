@@ -47,7 +47,7 @@ public class Solution {
       }
     }
     if (key < root.key) {
-      root.left = deleteTree(root.left, key);
+      root.left = deleteTree(root.left, key); // recursion 
     } else if (key > root.key) {
       root.right = deleteTree(root.right, key);
     }
