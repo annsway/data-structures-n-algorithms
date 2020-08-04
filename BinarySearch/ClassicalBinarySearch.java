@@ -19,14 +19,14 @@ public class Solution {
     }
     int left = 0;
     int right = array.length - 1; 
-    while(left <= right){
+    while(left <= right){ // 必须是<=， 否则出第一次直接找到target外，其余情况都无法找到，因为最后一轮搜索范围只剩一个元素时，left = right，必须要进入while来判断是否为target
       int mid = left + (right - left) / 2;
       if(array[mid] == target){
         return mid;
       } else if(array[mid] > target){
-        right = mid - 1;
+        right = mid - 1; // 必须-1: 当target比array里最小的元素小时，若right = mid，那么最后一次 right = left, 会进入死循环
       } else if(array[mid] < target){
-        left = mid + 1;
+        left = mid + 1; // 必须+1：当target比array里最大的元素大时，若left = mid，那么最后一次 left = right, 会进入死循环
       }
     }
     return -1;
