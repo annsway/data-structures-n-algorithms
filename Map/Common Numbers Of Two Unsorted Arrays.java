@@ -1,16 +1,13 @@
 /**
-Common Numbers Of Two Unsorted Arrays.java
-
-Find all numbers that appear in both of the two unsorted arrays, return the common numbers in increasing order.
+Find all numbers that appear in both of two unsorted arrays.
 
 Assumptions
 
-Both arrays are not null.
-There are no duplicate numbers in each of the two arrays respectively.
-Exmaples
+Both of the two arrays are not null.
+In any of the two arrays, there could be duplicate numbers.
+Examples
 
-A = {1, 2, 3}, B = {3, 1, 4}, return [1, 3]
-A = {}, B = {3, 1, 4}, return []
+A = {1, 2, 3, 2}, B = {3, 4, 2, 2, 2}, return [2, 2, 3] (there are both two 2s in A and B)
 
 **/
 
@@ -23,7 +20,7 @@ public class Solution {
         for (int num : a) {
             Integer count = countA.get(num);
             if (count != null) {
-                countA.put(num, count++);
+                countA.put(num, ++count); // must be ++count in order to update the count
             } else {
                 countA.put(num, 1);
             }
@@ -31,7 +28,7 @@ public class Solution {
         for (int num : b) {
             Integer count = countB.get(num);
             if (count != null) {
-                countB.put(num, count++);
+                countB.put(num, ++count);
             } else {
                 countB.put(num, 1);
             }
