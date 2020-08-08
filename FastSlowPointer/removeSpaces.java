@@ -26,6 +26,7 @@ public String removeSpaces(String input) {
             }
         }
     }
+    // 最后一位是space
     if (slow > 0 && array[slow - 1] == ' ') {
         slow--;
     }
