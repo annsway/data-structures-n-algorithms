@@ -2,8 +2,8 @@ public class Solution {
   public int editDistance(String one, String two) {
     // M[i][j] represents the min # of actions to transform the first i letters of S1 to 
     // the first j letters of S2
-    // i represents 
-    // j represents 
+    // i represents the ith letter of S1, 对应的S1 index = i - 1
+    // j represents the jth letter of S2, 对应的S2 index = j - 1
     int[][] M = new int[one.length() + 1][two.length() + 1];
 
     for (int i = 0; i <= one.length(); i++) {
