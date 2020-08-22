@@ -14,14 +14,16 @@ Word: “robob” return false
 Word: “robcatbob” return true since it can be composed by "rob", "cat", "bob"
 */
 
+// Time Complexity = O(n^3) because of the string.substring api
 public class Solution {
   public boolean canBreak(String input, String[] dict) {
-      // Write your solution here
+      // M[i] represents whether the substring[0, i) can be composed of dictionary words. 
       boolean[] M = new boolean[input.length() + 1];
       M[0] = true; 
       Set<String> set = toSet(dict);
       for (int i = 1; i < M.length; i++) {
           for (int j = 0; j < i; j++) {
+              // substring(j, i): [j, i) of the string, not including i 
               if (set.contains(input.substring(j, i)) && M[j]) {
                   M[i] = true;
                   break;
