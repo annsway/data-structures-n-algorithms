@@ -12,13 +12,14 @@ public class Solution {
     if (rows == 0 || columns == 0) { // 空馒头，没有肉馅儿. e.g. 5 x 2 matrix 转一圈就够了，第一圈之后就不能往里走了
       return;
     }
-    if (rows == 1 && columns == 1) {
+    if (rows == 1 && columns == 1) { // test case: {{1}}
       res.add(matrix[offset][offset]);
       return;
     }
     if (rows == 1) { // 当只剩一排，遍历这一排的所有element，注意不要 -1
-      for (int i = 0; i < columns; i++) {
+      for (int i = 0; i < columns; i++) { // test case: {{1, 2, 3, 4}}
         res.add(matrix[offset][offset + i]);
+      }
       }
       return; 
     }
