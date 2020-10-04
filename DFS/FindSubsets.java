@@ -34,7 +34,7 @@ public class SolDFS {
     private void helper(char[] input, int level, StringBuilder solutionPrefix, List<String> res){
         if (level == input.length) {
             res.add(solutionPrefix.toString());
-            return;
+            return; // must have "return" here, otherwise, it will run the next line of code, which will cause index out of bound for input[length]
         }
         solutionPrefix.append(input[level]);
         helper(input, level + 1, solutionPrefix, res);
