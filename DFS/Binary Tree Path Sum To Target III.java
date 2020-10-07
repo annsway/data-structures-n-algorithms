@@ -61,4 +61,35 @@ public class Solution {
     M.remove(root);
     return false; 
   }
+  /**
+             -1
+          /      \
+        -2        -6
+        /  \
+      -3   -4
+           /  \
+         -7   8
+        /
+       -5
+ **/
+    public static void main(String[] args) {
+        // Create a binary search tree 
+        TreeNode root = new TreeNode(-1);
+
+        root.left = new TreeNode(-2);
+        root.left.left = new TreeNode(-3);
+        root.left.right = new TreeNode(-4);
+        root.left.right.right = new TreeNode(8);
+        root.left.right.left = new TreeNode(-7);
+        root.left.right.left.left = new TreeNode(-5);
+
+        root.right = new TreeNode(-6);
+
+        // test
+        SolBST sol = new SolBST();
+        System.out.println(sol.exist(root, -4));
+
+//        System.out.println(sol.layerByLayer(root));
+    }
+
 }
