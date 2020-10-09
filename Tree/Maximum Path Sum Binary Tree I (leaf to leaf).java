@@ -1,4 +1,7 @@
 /*
+
+leaf node to leaf node
+
 * Given a binary tree in which each node contains an int number.
 Find the maximum possible sum from any leaf node to another leaf node.
 The maximum sum path may or may not go through root.
@@ -38,7 +41,7 @@ public class SolBST {
         }
         int leftMax = helper(root.left, globalMax);
         int rightMax = helper(root.right, globalMax);
-        if (root.left != null && root.right != null) {
+        if (root.left != null && root.right != null) { // 只有在有左右leaf nodes的情况下，才考虑更新globalMax, 因为是leaf node to leaf node
             globalMax[0] = Math.max(globalMax[0], leftMax + rightMax + root.key);
             return Math.max(leftMax, rightMax) + root.key;
         }
