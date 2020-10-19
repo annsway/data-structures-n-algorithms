@@ -41,7 +41,7 @@ private void helper(int target, int factor, List<Integer> cur, List<List<Integer
         }
         return;
     }
-    for (int curFactor = factor; curFactor <= target; curFactor++) {
+    for (int curFactor = factor; curFactor <= target; curFactor++) { // 必须加等号，否则无法触及base case
         if (target % curFactor == 0) {
             cur.add(curFactor);
             helper(target / curFactor, curFactor, cur, res);
@@ -49,3 +49,17 @@ private void helper(int target, int factor, List<Integer> cur, List<List<Integer
         }
     }
 }
+/*
+
+target = 8
+              cur = {}
+         / |  |  |  |  |  \
+        2  3  4  5  6  7   8
+       /   x  |  x  x  x    \
+      2       2             (x)
+     /
+    2
+
+*/
+
+
