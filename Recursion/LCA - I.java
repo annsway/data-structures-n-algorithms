@@ -28,9 +28,12 @@ The lowest common ancestor of 1 and 3 is 2
 经典的从下往上返回值。
 分类讨论：
 1. p, q 为直接隶属关系(base case)
+	case 1: left == null && right == null return null 
+	case 2 + 3: if one side is null and the other side is NOT null
 2. p, q 不直接为隶属关系
-	(a) null && null(base case)
-	(b) either is null
+	case 1: left == null && right == null (base case)
+	case 2 + 3: either is null
+	case 4: if both sides are NOT null, return current
 */
 
 public class Solution {
