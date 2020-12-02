@@ -4,12 +4,12 @@ public class ReverseLinkedListRecursion {
         if(head == null || head.next == null){
             return head;
         }
-        ListNode newHead = reverse(head.next); // Node3; newHead won't be created until we hit the base case
+        ListNode reversedHead = reverse(head.next); // Node3; newHead won't be created until we hit the base case
         // head对应的是recursion的上一层
-        ListNode n2 = head.next; // 表示读head指向的node1中的黄色小纸条来找到node2
-        n2.next = head; // ~ head.next.next = head 表示将node2中的黄色小纸条next写上head指向的node1的地址
+        ListNode cur = head.next; // 表示读head指向的node1中的黄色小纸条来找到node2
+        cur.next = head; // head 即 prev; ~ head.next.next = head 表示将node2中的黄色小纸条next写上head指向的node1的地址
         head.next = null;
-        return newHead; // 每层返回的都是newHead不变
+        return reversedHead; // 每层返回的都是reversedHead
     }
 
     public static void main(String[] args) {
